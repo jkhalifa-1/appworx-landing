@@ -1,0 +1,213 @@
+@import '~styles.scss';
+
+.app-navbar {
+  position: fixed;
+  background: #FFF;
+  z-index: 1;
+  width: 100%;
+
+  .default-navbar {
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .nav-cont {
+      text-align: left;
+      cursor: pointer;
+      width: 20%;
+  
+      .burger-menu {
+        background: $color-appworx;
+        display: block;
+        height: 4px;
+        margin: 8px 0px;
+        width: 40px;
+      }
+    }
+
+    .logo-cont {
+      text-align: center;
+      width: 60%;
+  
+      img {
+        width: 150px;
+      }
+    }
+
+    .demo-cont {
+      width: 20%;
+      height: 100%;
+      text-align: right;
+      
+      .btn {
+        padding: 10px 50px;
+        border-color: $color-appworx;
+        border-width: 2px;
+        color: $color-appworx;
+        font-weight: 500;
+        text-transform: uppercase;
+  
+        &:hover {
+          color: #FFF;
+        }
+      }
+    }
+  }
+  
+  .hr-navbar,
+  .app2go-navbar,
+  .go-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+
+    .nav-cont {
+      text-align: left;
+      cursor: pointer;
+      width: 40px;
+  
+      .burger-menu {
+        background: $color-appworx;
+        display: block;
+        height: 4px;
+        margin: 8px 0px;
+      }
+    }
+
+    .nav {
+      &:nth-child(1) { flex: 20%; }
+      &:nth-child(2) { flex: 60%; }
+      &:nth-child(3) { flex: 20%; }
+
+      a {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        color: #3F474E;
+        text-transform: uppercase;
+        font-family: $font-family-1;
+        position: relative;
+
+        &:hover,
+        &.active {
+          &:after {
+            content: '';
+            position: absolute;
+            height: 4px;
+            width: calc(100% - 20px);
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+      }
+
+      .register {
+        color: #FFF !important;
+      }
+    }
+  }
+  
+  .hr-navbar {
+    .burger-menu { background: $color-hr !important; }
+    .nav {
+      a {
+        &:hover,
+        &.active { &:after { background: $color-hr; } }
+      }
+      .register { background: $color-hr; }
+    }
+  }
+  
+  .app2go-navbar {
+    .burger-menu { background: $color-app2go !important; }
+    .nav {
+      a {
+        &:hover,
+        &.active { &:after { background: $color-app2go; } }
+      }
+      .register { background: $color-app2go; }
+    }
+  }
+  
+  .go-navbar {
+    .burger-menu { background: $color-go !important; }
+    .nav {
+      a {
+        &:hover,
+        &.active { &:after { background: $color-go; } }
+      }
+      .register { background: $color-go; }
+    }
+  }
+}
+
+.side-bar {
+  position: fixed;
+  height: 100%;
+  background: #FFF;
+  left: -300px;
+  width: 300px;
+  z-index: 3;
+  transition: 200ms ease-in-out;
+
+  &.showSidebar {
+    left: 0px;
+  }
+
+  ul {
+    li {
+      a {
+        font-size: 25px;
+        color: #292E33;
+        text-transform: uppercase;
+        padding: 1rem 3rem;
+        font-weight: 500;
+      }
+
+      &:first-child {
+        a {
+          padding-top: 0px;
+        }
+      }
+
+      .nav-cont {
+        text-align: left;
+        padding: 3rem 3rem .5rem;
+        position: relative;
+        height: 106px;
+        cursor: pointer;
+
+        .burger-menu {
+          position: absolute;
+          background: $color-appworx;
+          display: block;
+          height: 4px;
+          width: 45px;
+          margin: 8px 0px;
+
+          &:first-child { transform: rotate(45deg); }
+          &:last-child { transform: rotate(135deg); }
+        }
+      }
+    }
+  }
+}
+
+.sidebar-overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  visibility: hidden;
+
+  &.showOverlay {
+    visibility: visible;
+  }
+}

@@ -1,0 +1,160 @@
+<app-header></app-header>
+
+<div class="row no-gutters section-1">
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="carousel-overlay"></div>
+        <img class="img-fluid" src="../../../assets/img/mask-1.png" alt="First slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Take Your Online Ordering To The Next Level</h1>
+          <h2>Deliciousness is just a few clicks away at
+            <br> our online ordering app</h2>
+          <button class="btn btn-primary-inverted">Learn more</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-overlay"></div>
+        <img class="img-fluid" src="../../../assets/img/mask-2.png" alt="First slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Take Your Online Ordering To The Next Level</h1>
+          <h2>Deliciousness is just a few clicks away at
+            <br> our online ordering app</h2>
+          <button class="btn btn-primary-inverted">Learn more</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-overlay"></div>
+        <img class="img-fluid" src="../../../assets/img/mask-3.png" alt="First slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Take Your Online Ordering To The Next Level</h1>
+          <h2>Deliciousness is just a few clicks away at
+            <br> our online ordering app</h2>
+          <button class="btn btn-primary-inverted">Learn more</button>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<div class="row no-gutters section-2">
+  <div class="col-md-4 hr">
+    <div class="brand-container">
+      <div class="img-cont">
+        <img src="../../../assets/img/hr-icon.png">
+      </div>
+      <h5>Human Resources</h5>
+      <p>Simplifies the execution of company's HR management practices of onboarding, employee engagement, and employee information.</p>
+      <button [ngx-scroll-to]="'#hr'" [ngx-scroll-to-offset]="-100" class="btn btn-primary-inverted">Learn more</button>
+    </div>
+  </div>
+  <div class="col-md-4 app2go">
+    <div class="brand-container">
+      <div class="img-cont">
+        <img src="../../../assets/img/app2go-icon.png">
+      </div>
+      <h5>app2go</h5>
+      <p>Reliable, fast, and secure digital ordering solutions for multi-location restaurants. Seamlessly synced with your operations,
+        systems, and brand.</p>
+      <button [ngx-scroll-to]="'#app2go'" [ngx-scroll-to-offset]="-100" class="btn btn-primary-inverted">Learn more</button>
+    </div>
+  </div>
+  <div class="col-md-4 go">
+    <div class="brand-container">
+      <div class="img-cont">
+        <img src="../../../assets/img/go-icon.png">
+      </div>
+      <h5>go</h5>
+      <p>Safe, smart and time saving solution for you. Fast easy and safe booking service to help you reach your destination
+        comfortably.
+      </p>
+      <button [ngx-scroll-to]="'#go'" [ngx-scroll-to-offset]="-100" class="btn btn-primary-inverted">Learn more</button>
+    </div>
+  </div>
+</div>
+
+<div id="hr" class="row no-gutters row-eq-height section-3">
+  <div class="col-sm-4">
+    <div class="phone">
+      <img src="../../../assets/img/i6-phone-hr.png" class="img-fluid" alt="HR Phone Image">
+    </div>
+  </div>
+  <div class="col-sm-8 content">
+    <h4>Human Resource</h4>
+    <hr class="brand-divider" />
+    <h1>Create corporate mobile apps
+      <br> to improve employee engagement
+      <br> and satisfaction.</h1>
+    <button class="btn btn-primary-inverted mt-4">Learn more</button>
+  </div>
+</div>
+
+<div id="app2go" class="row no-gutters row-eq-height section-4">
+  <div class="col-sm-8 content">
+    <h4>App2go</h4>
+    <hr class="brand-divider" />
+    <h1>Stay Ahead of Your Competitors by
+      <br> Offering your Own Branded Online
+      <br> Ordering System.</h1>
+    <button class="btn btn-primary-inverted mt-4">Learn more</button>
+  </div>
+  <div class="col-sm-4">
+    <div class="phone">
+      <img src="../../../assets/img/i6-phone-app2go.png" class="img-fluid" alt="HR Phone Image">
+    </div>
+  </div>
+</div>
+
+<div id="go" class="row no-gutters row-eq-height section-5">
+  <div class="col-sm-4">
+    <div class="phone">
+      <img src="../../../assets/img/i6-phone-go.png" class="img-fluid" alt="HR Phone Image">
+    </div>
+  </div>
+  <div class="col-sm-8 content">
+    <h4>Human Resource</h4>
+    <hr class="brand-divider" />
+    <h1>Stay Ahead of Your Competitors by
+      <br> Offering your Own Brandeded.</h1>
+    <p class="mt-4">Our cutting-edge technology allows you to seamlessly add
+      <br> e-commerce to your business, so that customers can order
+      <br> online for pickup and delivery, driving sales and expanding your
+      <br> customer reach.</p>
+    <button class="btn btn-primary-inverted mt-4">Learn more</button>
+  </div>
+</div>
+
+<div class="row no-gutters section-6">
+  <div class="col">
+    <h3>About Us</h3>
+    <hr class="global-divider">
+    <h1>We create highly polished iPhone &amp; Android apps for startups and enterprise clients. We also know a thing or two
+      about branding, websites, and user acquisition.</h1>
+    <p class="my-4">Leading platform for mobile apps, underpinned by the wealth of knowledge our skilled designers and developers bring to
+      each product we create. Send us your business goals and app ideas. Let us put it in the App Store’s hands, ready for
+      deployment.
+    </p>
+    <button class="btn btn-primary-inverted">Learn more</button>
+  </div>
+</div>
+
+<div class="row no-gutters section-7">
+  <div class="col">
+    <h1>Have questions? We’re happy to help! Get in touch</h1>
+  </div>
+</div>
+
+<app-footer></app-footer>

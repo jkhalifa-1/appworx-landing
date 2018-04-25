@@ -1,0 +1,19 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Landing</id>
+    <title>Landing</title>
+    <version>1.0.0.0</version>
+    <authors>AktivSystems</authors>
+    <owners></owners>
+    <licenseUrl>http://aktivsystems.com/</licenseUrl>
+    <projectUrl>http://aktivsystems.com/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Landing</description>
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <!-- copy all the files in dist folder to a nuget package, except for the config.js -->
+    <file src="dist\**\*.*" target="." />
+  </files>
+</package>

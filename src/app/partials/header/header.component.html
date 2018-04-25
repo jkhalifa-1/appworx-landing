@@ -1,0 +1,276 @@
+<nav class="side-bar" [ngClass]="{'showSidebar': sidebarState}" [ngSwitch]="route">
+  <ul class="nav flex-column" *ngSwitchCase="'/hr'">
+    <li class="nav-item">
+      <div class="nav-cont" (click)="toggleSidebar()">
+        <span class="burger-menu"></span>
+        <span class="burger-menu"></span>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/hr">HR App</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/go">Go</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/app2go">App2go</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/blog">Blog</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/contact">Contact</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/faq">Faq</a>
+    </li>
+  </ul>
+
+  <ul class="nav flex-column" *ngSwitchCase="'/app2go'">
+    <li class="nav-item">
+      <div class="nav-cont" (click)="toggleSidebar()">
+        <span class="burger-menu"></span>
+        <span class="burger-menu"></span>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/hr">HR App</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/go">Go</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/app2go">App2go</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/blog">Blog</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/contact">Contact</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/faq">Faq</a>
+    </li>
+  </ul>
+
+  <ul class="nav flex-column" *ngSwitchCase="'/go'">
+    <li class="nav-item">
+      <div class="nav-cont" (click)="toggleSidebar()">
+        <span class="burger-menu"></span>
+        <span class="burger-menu"></span>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/hr">HR App</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/go">Go</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/app2go">App2go</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/blog">Blog</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/contact">Contact</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/faq">Faq</a>
+    </li>
+  </ul>
+
+  <ul class="nav flex-column" *ngSwitchDefault>
+    <li class="nav-item">
+      <div class="nav-cont" (click)="toggleSidebar()">
+        <span class="burger-menu"></span>
+        <span class="burger-menu"></span>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/hr">HR App</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/go">Go</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/app2go">App2go</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/blog">Blog</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/contact">Contact</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/faq">Faq</a>
+    </li>
+  </ul>
+</nav>
+
+<nav class="app-navbar" [ngSwitch]="route">
+  <div class="hr-navbar" *ngSwitchCase="'/hr'">
+    <ul class="nav justify-content-start">
+      <li class="nav-item">
+        <div class="nav-cont" (click)="toggleSidebar()">
+          <span class="burger-menu"></span>
+          <span class="burger-menu"></span>
+          <span class="burger-menu"></span>
+        </div>
+      </li>
+      <li class="nav-item">
+        <!-- <img src="../../../assets/img/go-icon.png" alt="Go Logo" /> -->
+      </li>
+    </ul>
+
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">How It Works</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Stand Out</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Testimonials</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link register" href="#">Register</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="app2go-navbar" *ngSwitchCase="'/app2go'">
+    <ul class="nav justify-content-start">
+      <li class="nav-item">
+        <div class="nav-cont" (click)="toggleSidebar()">
+          <span class="burger-menu"></span>
+          <span class="burger-menu"></span>
+          <span class="burger-menu"></span>
+        </div>
+      </li>
+      <li class="nav-item">
+        <!-- <img src="../../../assets/img/go-icon.png" alt="Go Logo" /> -->
+      </li>
+    </ul>
+
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">How It Works</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Stand Out</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Testimonials</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link register" href="#">Register</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="go-navbar" *ngSwitchCase="'/go'">
+    <ul class="nav justify-content-start">
+      <li class="nav-item">
+        <div class="nav-cont" (click)="toggleSidebar()">
+          <span class="burger-menu"></span>
+          <span class="burger-menu"></span>
+          <span class="burger-menu"></span>
+        </div>
+      </li>
+      <li class="nav-item">
+        <!-- <img src="../../../assets/img/go-icon.png" alt="Go Logo" /> -->
+      </li>
+    </ul>
+
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">How It Works</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Stand Out</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Testimonials</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link register" href="#">Register</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="default-navbar" *ngSwitchDefault>
+    <div class="nav-cont" (click)="toggleSidebar()">
+      <span class="burger-menu"></span>
+      <span class="burger-menu"></span>
+      <span class="burger-menu"></span>
+    </div>
+    <div class="logo-cont">
+      <a routerLink="/">
+        <img src="../../../assets/img/app-factorie-logo.png" />
+      </a>
+    </div>
+    <div class="demo-cont">
+      <button type="button" class="btn btn-outline-primary">Schedule demo</button>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar-overlay" [ngClass]="{'showOverlay': sidebarState}"></div>

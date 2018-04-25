@@ -1,0 +1,24 @@
+footer {
+  background: #081F34;
+  padding: 2% 10%;
+
+  .footer-center {
+    border-left: 1px solid #3E5060;
+    border-right: 1px solid #3E5060;
+    padding: 0 40px;
+  }
+
+  .footer-right {
+    padding: 0 40px;
+  }
+
+  ul {
+    columns: 3;
+    list-style-type: none;
+  }
+
+  fa, p, a {
+    color: #3E5060;
+    font-size: 20px;
+  }
+}

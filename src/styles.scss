@@ -1,0 +1,49 @@
+@import 'bootstrap/dist/css/bootstrap';
+
+@import '/scss/settings';
+@import '/scss/mixins';
+
+p {
+  font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #292E33;
+  font-family: 'Montserrat', 'Open Sans';
+  font-weight: 300;
+}
+
+.btn {
+  padding: 0.375rem 1.25rem;
+  font-family: $font-family-1;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 13px;
+  letter-spacing: .05em;
+
+  &.btn-circular {
+    border-radius: 50px;
+  }
+
+  &.btn-primary-inverted {
+    border: 0;
+    color: $color-appworx;
+    background: #FFF;
+    text-transform: uppercase;
+    padding: 13px 50px;
+  }
+
+  &.btn-primary {
+    border: 0;
+    color: #FFF;
+    background: $color-appworx !important;
+    text-transform: uppercase;
+    padding: 13px 50px;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    box-shadow: none !important;
+  }
+}
