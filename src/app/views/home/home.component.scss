@@ -1,9 +1,9 @@
-@import '~styles.scss';
+@import '~scss/settings';
 
 .brand-divider,
 .global-divider {
   display: block;
-  background: #FFF;
+  background: $color-appworx;
   width: 50px;
   height: 3px;
   margin: 1rem 0;

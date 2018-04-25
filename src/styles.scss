@@ -9,13 +9,13 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   color: #292E33;
-  font-family: 'Montserrat', 'Open Sans';
+  font-family: $font-family-1;
   font-weight: 300;
 }
 
 .btn {
   padding: 0.375rem 1.25rem;
-  font-family: $font-family-1;
+  font-family: $font-family-2;
   font-weight: 300;
   font-size: 14px;
   line-height: 13px;

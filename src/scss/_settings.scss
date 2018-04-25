@@ -5,31 +5,3 @@ $color-go: #FB4408;
 
 $font-family-1: 'Montserrat', 'Open Sans';
 $font-family-2: 'Open Sans', 'Montserrat';
-
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  src: url("/assets/fonts/Montserrat/Montserrat-Regular.ttf") format("ttf");
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  src: url("/assets/fonts/Montserrat/Montserrat-SemiBold.ttf") format("ttf");
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: url("/assets/fonts/Open_Sans/OpenSans-Regular.ttf") format("ttf");
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  src: url("/assets/fonts/Open_Sans/OpenSans-SemiBold.ttf") format("ttf");
-}
